@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Music Player</title>
+    <link rel="icon" href="assets/images/icon.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Musicly</div>
+        <div class="playlist-btn" id="playlistBtn">
+            <div class="line line-1"></div>
+            <div class="line line-2"></div>
+            <div class="line line-3"></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="player-container">
+            <img src="https://i.scdn.co/image/ab67616d0000b273ba5db46f4b838ef6027e6f96" alt="Album Art" class="album-art" id="albumArt">
+            
+            <div class="song-info">
+                <h1 class="song-title" id="songTitle">Blinding Lights</h1>
+                <p class="song-artist" id="songArtist">The Weeknd</p>
+            </div>
+            
+            <div class="progress-container" id="progressContainer">
+                <div class="progress-bar" id="progressBar"></div>
+                <div class="time-info">
+                    <span id="currentTime">0:00</span>
+                    <span id="duration">3:20</span>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="prevBtn"><i class="fas fa-step-backward"></i></button>
+                <button class="control-btn play-btn" id="playBtn"><i class="fas fa-play" id="playIcon"></i></button>
+                <button class="control-btn" id="nextBtn"><i class="fas fa-step-forward"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Playlist -->
+    <div class="playlist-container" id="playlistContainer">
+        <h2 class="playlist-header">
+            Playlist
+            <span class="playlist-count" id="playlistCount">6 songs</span>
+        </h2>
+        
+        <div class="playlist-item active" data-index="0">
+            <img src="assets/images/sunny.jpg" alt="Song cover" class="playlist-item-img">
+            <div class="playlist-item-info">
+                <div class="playlist-item-title">Sunny</div>
+                <div class="playlist-item-artist">KODOMOi</div>
+            </div>
+            <div class="playlist-item-duration">3:53</div>
+        </div>
+        
+        <div class="playlist-item" data-index="1">
+            <img src="assets/images/Alive.jpeg" alt="Song cover" class="playlist-item-img">
+            <div class="playlist-item-info">
+                <div class="playlist-item-title">Alive</div>
+                <div class="playlist-item-artist">Ikson</div>
+            </div>
+            <div class="playlist-item-duration">3:13</div>
+        </div>
+        
+        <div class="playlist-item" data-index="2">
+            <img src="assets/images/on-on.jpeg" alt="Song cover" class="playlist-item-img">
+            <div class="playlist-item-info">
+                <div class="playlist-item-title">On & On</div>
+                <div class="playlist-item-artist">Cartoon ft. Daniel Levi</div>
+            </div>
+            <div class="playlist-item-duration">3:30</div>
+        </div>
+        
+        <div class="playlist-item" data-index="3">
+            <img src="assets/images/blue-sky.jpeg" alt="Song cover" class="playlist-item-img">
+            <div class="playlist-item-info">
+                <div class="playlist-item-title">Blue Sky</div>
+                <div class="playlist-item-artist">Silent Partner</div>
+            </div>
+            <div class="playlist-item-duration">3:06</div>
+        </div>
+        
+        <div class="playlist-item" data-index="4">
+            <img src="assets/images/beech.jpeg" alt="Song cover" class="playlist-item-img">
+            <div class="playlist-item-info">
+                <div class="playlist-item-title">Beech</div>
+                <div class="playlist-item-artist">MBB</div>
+            </div>
+            <div class="playlist-item-duration">2:02</div>
+        </div>
+        
+        <div class="playlist-item" data-index="5">
+            <img src="assets/images/island.jpg" alt="Song cover" class="playlist-item-img">
+            <div class="playlist-item-info">
+                <div class="playlist-item-title">Island</div>
+                <div class="playlist-item-artist">MBB</div>
+            </div>
+            <div class="playlist-item-duration">2:04</div>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" id="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
