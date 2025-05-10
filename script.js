@@ -40,14 +40,14 @@ const songs = [
         artist: "Ikson",
         duration: "3:13",
         cover: "assets/images/Alive.jpeg",
-        src: "assets/audio/Ikson-Alive.mp3"
+        src: "assets/audio/song2.mp3"
     },
     {
         title: "On & On",
         artist: "Cartoon ft. Daniel Levi",
         duration: "3:30",
         cover: "assets/images/on-on.jpeg",
-        src: "assets/audio/"
+        src: "assets/audio/song3.mp3"
     },
     {
         title: " Blue Sky ",
